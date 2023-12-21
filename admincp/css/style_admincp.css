@@ -1,0 +1,279 @@
+
+/* Header */
+.header{
+    height: 175px;
+    width: 100%;
+}
+
+.header .top-header{
+    background-color: #4d5660;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 70px;
+    color:#9CA3AF ;
+}
+
+.login button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.login i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.header .bottom-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 70px;
+    height: 145px;
+}
+
+.bottom-header .search{
+    border: 1px solid #ccc;
+    height: 38px;
+}
+
+.search input{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.search i{
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 0.6;
+  
+}
+
+.search i:hover{
+    opacity: 1;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo .image-header{
+    background: url("../../public/images/wowfood.png") center center no-repeat;
+    width: 300px;
+    height: 95px;
+    background-size: 100% 100%;
+    margin-top: -34px;
+    object-fit: cover;
+    border-radius: 50%;
+   
+   
+}
+
+.bottom-header .cart{
+    width: 200px;
+    display: inline-flex;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+    height: 38px;
+}
+
+.cart-img,.cart-gia{
+    width: 20%;
+    height: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.cart-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.cart-sl-sp{
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    width: 80%;
+    height: 100%;
+    padding: 5px;
+}
+
+/* Menu */
+.menu-container {
+    width: 100%;
+    height: 115vh; 
+}
+nav.col-md-3.col-lg-2.col-3.d-md-block.bg-light.sidebar {
+    background: #4d5660!important;
+    
+}
+.col-md-12{
+    width: 100%;
+}
+nav.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; /* Chiều cao tối đa của menu */
+    z-index: 1; /* Đảm bảo menu nằm trên cùng */
+}
+main {
+    margin-left: 250px; /* Đảm bảo khoảng cách từ bên trái cho phần main */
+    z-index: 0;
+}
+li.list-group-item-image {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.image-menu {
+    background: url("../../public/images/logoadmin.jpg") center center no-repeat;
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+li.list-group-item-image p {
+    display: flex;
+    align-items: center; 
+    margin-top: 15px;
+    color: antiquewhite;
+}
+ul.admincp_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #4d5660;
+    width: 30%; 
+    min-width: 200px;
+    border: none !important;
+}
+
+ul.admincp_list li {
+    width: 100%;
+}
+li.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #4d5660;
+    border: 1px  solid rgba(214, 205, 205, 0.269);
+    
+    
+}
+
+ul.admincp_list li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 16px;
+  
+}
+
+li.list-group-item:hover {
+    background-color: #98a1ac;
+  
+}
+ul.admincp_list li:hover a {
+    
+    color: #171414;
+}
+.list-group-item-logout .logout {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.list-group-item-logout .logout p,
+.list-group-item-logout .logout i {
+    margin: 0;
+}
+.list-group-item-logout .logout p{
+    margin-right: 10px;
+}
+.logout {
+    background: rgb(39, 44, 65);
+    border-radius: 5px;
+    color: #f2f2f2;
+}
+.logout:hover {
+    background: rgb(158, 145, 145);
+    border-radius: 5px;
+    color: #141313;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* Admin */
+.container-fluid .row{
+    width: 100%;
+    display: flex;
+}
+.row nav{
+    width: 18%;
+}
+.row main{
+    width: 83%;
+    margin-left: -15px;
+}
+
+.welcome {
+	color: #D1D5DB;
+}
+
+.welcome .content {
+    background-color: #313348;
+    height: 102px;
+}
+
+.welcome p {
+	color:  #9CA3AF;
+}
+
+
+.container-fluid-left{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6f6486;
+}
+
+.header-right{
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.header-right li{
+    list-style-type: none;
+    margin-right: 50px;
+    color: white;
+}
